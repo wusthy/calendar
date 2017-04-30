@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calendar</title>
+    <link rel="stylesheet" href="calendar-css.css">
+</head>
+<body>
+   <div class="div-date">
+       <select id = 'Year' onchange="Ychanged()">
+       </select>年
+       <select id = 'Month' onchange="Ychanged()">
+       </select>月
+       <select id = 'Day'></select>日
+
+       <input type = 'button'onclick="changeCalendar()" value="查看日历" >
+   </div>
+   <div class= 'div-table'>
+       <table class = 'cal-table' cellpadding="0" cellspacing="0">
+           <tr>
+               <th>星期日</th>
+               <th>星期一</th>
+               <th>星期二</th>
+               <th>星期三</th>
+               <th>星期四</th>
+               <th>星期五</th>
+               <th>星期六</th>
+           </tr>
+           <tbody id = 'Ctbody'>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+               <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           </tbody>
+       </table>
+   </div>
+
+</body>
+    <script type="text/javascript" src="Getdata.js"></script>
+</html>
